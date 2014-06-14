@@ -45,13 +45,21 @@
                 "contentController": {"@": "rangeController"}
             }
         },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel"
+        },
         "rangeController": {
             "prototype": "montage/core/range-controller"
+        },
+        "task": {
+            "prototype": "ui/task.reel",
+            "bindings": {
+                "task": {"<-": "@list:iteration.object"}
+            }
         },
         "text1": {
             "prototype": "montage/ui/text.reel",
             "properties": {
-                "element": {"#": "text1"},
                 "value": "Item"
             }
         },
@@ -70,7 +78,7 @@
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
-            <li data-montage-id="text1"></li>
+            <li data-montage-id="task"></li>
         </ul>
     </div>
 </body>
