@@ -28,7 +28,7 @@
             "properties": {
                 "element": {"#": "button"},
                 "enabled": true,
-                "label": "New Task"
+                "label": "Button"
             },
             "listeners": [
                 {
@@ -42,32 +42,11 @@
             "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
-                "content": [],
                 "contentController": {"@": "rangeController"}
-            }
-        },
-        "listItem": {
-            "prototype": "digit/ui/list-item.reel",
-            "properties": {
-                "element": {"#": "listItem"}
             }
         },
         "rangeController": {
             "prototype": "montage/core/range-controller"
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "Item"
-            }
-        },
-        "text1": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text1"},
-                "value": "Ite"
-            }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
@@ -84,9 +63,7 @@
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
-            <li data-montage-id="listItem">
-                <p data-montage-id="text"></p>
-            </li>
+            <li></li>
         </ul>
     </div>
 </body>
